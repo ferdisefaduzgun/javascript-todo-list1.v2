@@ -1,0 +1,122 @@
+/* base css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html,body{
+    height: 100%;
+}
+/* base css end */
+
+/* main css start */
+
+.todobaslik{
+    text-align: center;
+    font-weight: 100;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.form{
+    display: flex;
+    gap: 1px;
+}
+
+.form input{
+    width: 400px;
+    padding: 14px;
+    outline: none;
+}
+
+.form button{
+    padding: 15px;
+    background-color: rgb(49, 133, 49);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.temizle{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 460px;
+}
+
+.temizle button{
+    padding: 15px;
+    background-color: rgb(165, 45, 45);
+    outline: none;
+    border: none;
+    color: white;
+    width: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.liste{
+    border: 1px solid black;
+    width: 465px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.liste li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 15px;
+    width: 80%;
+
+
+}
+
+.liste button{
+    border: none;
+    color: red;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* main css end */
+
+@media (max-width:475px) {
+    .form input{
+        width: 200px;
+    }
+
+    .liste{
+        width: 250px;
+    }
+    
+    .temizle{
+        width: 260px;
+    }
+}
